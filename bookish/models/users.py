@@ -1,6 +1,6 @@
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
-from bookish.app import db
+from . import db
 
 class Users(db.Model):
     __tablename__ = 'Users'

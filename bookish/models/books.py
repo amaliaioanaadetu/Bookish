@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from bookish.app import db
+from . import db
 from datetime import datetime
 
 
@@ -16,7 +16,7 @@ class Books(db.Model):
     inserted_at = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __init__(self, isbn, title, total_copies=1, available_copies=1):
-        elf.isbn = isbn
+        self.isbn = isbn
         self.title = title
         self.total_copies = total_copies
         self.available_copies = available_copies

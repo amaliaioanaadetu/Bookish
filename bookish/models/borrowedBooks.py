@@ -1,5 +1,5 @@
 from datetime import datetime
-from bookish.app import db
+from . import db
 
 class BorrowedBooks(db.Model):
     __tablename__ = 'BorrowedBooks'

@@ -3,12 +3,12 @@ version: '3.9'
 services:
   postgres:
     image: postgres:14-alpine
+    container_name: bookish_db
     ports:
       - "5432:5432"
     volumes:
       - ~/apps/postgres:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD="parola"
-      - POSTGRES_USER="user"
-      - POSTGRES_DB="db"
-    container_name: bookish_db
+      - POSTGRES_PASSWORD=parola
+      - POSTGRES_USER=user
+      - POSTGRES_DB=db

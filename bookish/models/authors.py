@@ -1,4 +1,4 @@
-from bookish.app import db
+from . import db
 
 class Authors(db.Model):
     __tablename__ = 'Authors'
