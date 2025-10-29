@@ -3,6 +3,7 @@ import {
   HomeDiv,
   HomeTitleTag,
   HomeTitleContainer,
+  SubTitle,
 } from "./HomeComponents";
 
 export class HomePage extends Component {
@@ -10,8 +11,7 @@ export class HomePage extends Component {
     return (
         <HomeDiv>
           <HomeTitleContainer>
-            <HomeTitleTag>Status:</HomeTitleTag>
-            <li>{this.props.okStatus}!</li>
+            <HomeTitleTag>Welcome to your place of creativity!</HomeTitleTag>
           </HomeTitleContainer>
         </HomeDiv>
     );
